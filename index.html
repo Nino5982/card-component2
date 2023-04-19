@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>card-component</title>
+  </head>
+  <style>
+    body {
+      background-color: #0d192c;
+    }
+    .equilibrium {
+      display: block;
+      position: absolute;
+      top: 152px;
+      bottom: 152px;
+      left: 545px;
+      right: 545px;
+      background: #15263f;
+      box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+      border-radius: 15px;
+      width: 350px;
+      height: 596px;
+      padding: 10px;
+      padding-right: 0px;
+    }
+    .card {
+      position: absolute;
+      top: 24px;
+      bottom: 0;
+      left: 24px;
+      right: 0;
+      background: #15263f;
+      box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+      border-radius: 15px;
+      width: 302px;
+      height: 302px;
+    }
+
+    .imagen {
+      display: block;
+      position: absolute;
+      max-width: 100%;
+      width: 302px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 24px;
+      height: 302px;
+      width: 302px;
+      opacity: 0;
+      transition: 0.5s ease;
+      background: #00fff8;
+      mix-blend-mode: normal;
+      border-radius: 8px;
+    }
+    .card:hover .overlay {
+      opacity: 0.5;
+    }
+
+    .icon-view {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 44px;
+      height: 33px;
+    }
+    h1 {
+      position: absolute;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 28px;
+      color: #00fff8;
+      height: 28px;
+      width: 302px;
+      left: 24px;
+      top: 350px;
+    }
+    .header-p {
+      position: absolute;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #8bacd9;
+      height: 52px;
+      width: 302px;
+      left: 24px;
+      top: 394px;
+      border-radius: nullpx;
+    }
+    .eth-day {
+      position: absolute;
+      top: 470px;
+      width: 320px;
+      height: 68px;
+    }
+    .eth {
+      position: absolute;
+      /* display: inline-block; */
+
+      height: 20px;
+      width: 75px;
+      left: 36px;
+
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 10px;
+
+      /* Cyan */
+
+      color: #00fff8;
+    }
+    .day {
+      position: absolute;
+      /* display: inline-block; */
+      height: 20px;
+      width: 73px;
+      left: 251px;
+
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 10px;
+
+      /* Soft Blue */
+
+      color: #8bacd9;
+    }
+    .clock {
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      left: 228px;
+      top: 16px;
+    }
+    .ethereum {
+      position: absolute;
+      height: 13px;
+      width: 13px;
+      left: 12px;
+      top: 16px;
+    }
+    .avatar-div {
+      position: absolute;
+      top: 530px;
+
+      left: 24px;
+      width: 302px;
+      height: 50px;
+      border-top: 1px solid #2e405a;
+    }
+    .image-avatar {
+      position: absolute;
+      top: 16px;
+
+      height: 33px;
+      width: 33px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ffffff;
+    }
+    .avatar-p1 {
+      position: absolute;
+      display: inline;
+      height: 20px;
+      width: 81px;
+      left: 50px;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+
+      /* Soft Blue */
+
+      color: #8bacd9;
+    }
+    .avatar-p2 {
+      position: absolute;
+      display: inline;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #00fff8;
+      height: 20px;
+      width: 93px;
+      left: 135px;
+    }
+  </style>
+
+  <body>
+    <div class="equilibrium">
+      <div class="card">
+        <div class="imagen-card">
+          <img
+            src="image-equilibrium.jpg"
+            alt="image-equilibrium"
+            class="imagen"
+          />
+          <div class="overlay">
+            <img src="icon-view.svg" alt="icon-view.svg" class="icon-view" />
+          </div>
+        </div>
+      </div>
+      <h1>Equilibrium #3429</h1>
+      <p class="header-p">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="eth-day">
+        <img src="icon-ethereum.svg" alt="icon-ethereum" class="ethereum" />
+        <p class="eth">0.041 ETH</p>
+        <img src="icon-clock.svg" alt="icon-clock" class="clock" />
+        <p class="day">3 days left</p>
+      </div>
+      <div class="avatar-div">
+        <img
+          src="image-avatar.png"
+          alt="image-avatar.png"
+          class="image-avatar"
+        />
+        <p class="avatar-p1">Creation of</p>
+        <p class="avatar-p2">Jules Wyvern</p>
+      </div>
+    </div>
+  </body>
+</html>
